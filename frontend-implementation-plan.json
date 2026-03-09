@@ -1,0 +1,38 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Fix question relevance and replace Arcanus with Luffy",
+  "requirements": [
+    {
+      "id": "REQ-15",
+      "summary": "Update the character avatar display on the frontend to show Luffy instead of Arcanus during gameplay and on the guess reveal screen",
+      "acceptanceCriteria": [
+        "Character avatar shows Luffy when he is the guessed character",
+        "No references to Arcanus appear in the UI",
+        "Character name displays as 'Monkey D. Luffy' or 'Luffy' in the guess reveal"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/luffy-avatar.dim_400x400.png",
+          "operation": "create",
+          "description": "Add the generated Luffy avatar image to the frontend assets directory. Use the workspace file path frontend/public/assets/generated/luffy-avatar.dim_400x400.png for the anime-style illustration of Monkey D. Luffy showing his signature straw hat, red vest, and cheerful expression."
+        },
+        {
+          "path": "frontend/src/components/CharacterAvatar.tsx",
+          "operation": "modify",
+          "description": "Update the CharacterAvatar component to reference the Luffy avatar image at frontend/public/assets/generated/luffy-avatar.dim_400x400.png instead of any Arcanus references. Ensure the character name prop displays 'Monkey D. Luffy' or 'Luffy' correctly when passed from parent components."
+        },
+        {
+          "path": "frontend/src/components/GuessReveal.tsx",
+          "operation": "modify",
+          "description": "Update the GuessReveal component to display the Luffy character correctly, ensuring the character name shows as 'Monkey D. Luffy' or 'Luffy', and that the CharacterAvatar component receives the correct props to show the Luffy avatar at frontend/public/assets/generated/luffy-avatar.dim_400x400.png. Remove any hardcoded references to Arcanus."
+        },
+        {
+          "path": "frontend/src/components/GameInterface.tsx",
+          "operation": "modify",
+          "description": "Review the GameInterface component to ensure it properly passes character data (including name and avatar path) to child components when the guessed character is Luffy. Verify that no hardcoded Arcanus references exist in the game flow logic."
+        }
+      ]
+    }
+  ]
+}

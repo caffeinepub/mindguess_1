@@ -1,0 +1,189 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "MindGuess - An AI-based interactive character guessing system using adaptive questioning and decision-tree logic to identify characters, personalities, or objects. Web-based platform with learning capabilities.",
+  "architectural_notes": [
+    "Frontend: HTML, CSS, JavaScript",
+    "Backend: PHP with MySQL database",
+    "Decision-tree based logic for question selection",
+    "Adaptive algorithm to minimize questions needed",
+    "Database stores characters, questions, and user response patterns",
+    "System learns and improves from user interactions"
+  ],
+  "known_issues": [
+    "Questions and answer options are not relevant to characters being guessed",
+    "Arcanus character appears instead of intended characters like Luffy"
+  ],
+  "isFixRequest": true,
+  "imageRequirements": "## Required Images\n- Anime-style illustration of Monkey D. Luffy from One Piece showing his signature straw hat, red vest, and cheerful expression (luffy-avatar.dim_400x400.png)",
+  "existing_features": [
+    {
+      "id": "feature-design-an-interactive-game-interface-with-a-character-avatar-area-question-display-panel-and-answer-buttons-yes-no-don-t-know-probably-probably-not-inspired-by-akinator-s-layout-from-https-en-akinator-com",
+      "title": "Design an interactive game interface with a character avatar area, question display panel, and answer buttons (Yes/No/Don't Know/Probably/Probably Not) inspired by Akinator's layout from https://en.akinator.com/",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-game-flow-that-guides-users-from-start-screen-through-question-sequence-to-final-guess-reveal-and-learning-phase-if-guess-is-incorrect",
+      "title": "Create a game flow that guides users from start screen through question sequence to final guess reveal and learning phase if guess is incorrect",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-character-submission-form-that-appears-when-the-system-fails-to-guess-allowing-users-to-input-character-name-category-and-key-attributes",
+      "title": "Build a character submission form that appears when the system fails to guess, allowing users to input character name, category, and key attributes",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-progress-tracking-that-shows-users-how-many-questions-have-been-asked-and-provides-visual-feedback-during-the-guessing-process",
+      "title": "Implement progress tracking that shows users how many questions have been asked and provides visual feedback during the guessing process",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-visually-engaging-design-with-a-mystical-playful-aesthetic-featuring-a-unique-color-scheme-smooth-animations-and-a-character-focused-layout-that-makes-the-ai-feel-intelligent-and-entertaining",
+      "title": "Create a visually engaging design with a mystical, playful aesthetic featuring a unique color scheme, smooth animations, and a character-focused layout that makes the AI feel intelligent and entertaining",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-character-avatar-display-on-the-frontend-to-show-luffy-instead-of-arcanus-during-gameplay-and-on-the-guess-reveal-screen",
+      "title": "Update the character avatar display on the frontend to show Luffy instead of Arcanus during gameplay and on the guess reveal screen",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Interactive question-based guessing system with yes/no and multiple-choice questions",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Decision-tree logic and adaptive algorithms to narrow down character possibilities",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Backend system (PHP/MySQL) to store characters, questions, and user responses",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Learning system that improves by storing new characters and answers from users",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Frontend interface (HTML/CSS/JavaScript) inspired by Akinator design",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Create a backend data model to store characters with their attributes (name, category, description) and a knowledge base of questions with associated answer patterns",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Implement decision-tree logic that selects the next most informative question based on user responses and remaining character possibilities",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Build game session management that tracks the current question sequence, user answers, and remaining character candidates for each active game",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Create a learning system that allows users to add new characters and their answer patterns when the system fails to guess correctly",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Implement a character guessing mechanism that presents the most likely character when confidence threshold is reached, with options to confirm or continue",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-15",
+      "summary": "Seed the initial knowledge base with at least 20 diverse characters spanning multiple categories (fictional characters, historical figures, celebrities) with comprehensive answer patterns",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-16",
+      "summary": "Fix question relevance and logic to ensure questions and answer options are appropriate for the characters being guessed",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-17",
+      "summary": "Replace Arcanus character references with Luffy from One Piece in the game interface and character database",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-18",
+      "summary": "Update the backend character database to remove Arcanus and add Luffy from One Piece with appropriate attributes including name 'Monkey D. Luffy', category 'Anime Character', and description capturing his key characteristics as the protagonist of One Piece",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-19",
+      "summary": "Review and update the question bank to ensure all questions are relevant to guessing anime characters, fictional characters, and other character types, removing any questions that don't help distinguish between characters",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-20",
+      "summary": "Update answer patterns for all characters in the database to ensure they correctly map to the revised question set, with accurate Yes/No/Probably/Probably Not/Don't Know responses",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "MindGuess",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

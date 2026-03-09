@@ -1,0 +1,17 @@
+{
+  "frontend/src/App.tsx": "Main application component with mystical gradient background, rendering Header, GamePage, and Footer components.",
+  "frontend/src/pages/GamePage.tsx": "Game flow orchestrator managing state transitions between start, questioning, guessing, learning, and success screens with session and character state management.",
+  "frontend/src/components/StartScreen.tsx": "Welcome screen with crystal ball background, mystical branding, game instructions, and start button that initiates a new game session.",
+  "frontend/src/components/GameInterface.tsx": "Main game interface displaying character avatar without name during questioning, question panel, answer buttons, and progress indicator while managing question flow and answer submission.",
+  "frontend/src/components/CharacterAvatar.tsx": "Mystical avatar component that dynamically displays Luffy's avatar when the character is \"Monkey D. Luffy\", otherwise shows the generic mystical avatar, with optional character name overlay.",
+  "frontend/src/components/QuestionPanel.tsx": "Question display component rendering the current question text in a prominent, styled panel with gradient background.",
+  "frontend/src/components/AnswerButtons.tsx": "Five answer buttons (Yes/Probably/Don't Know/Probably Not/No) with distinct colors, icons, and hover effects for user responses.",
+  "frontend/src/components/ProgressIndicator.tsx": "Progress tracking component showing question count and remaining candidates with visual progress bar.",
+  "frontend/src/components/GuessReveal.tsx": "Guess reveal screen displaying the guessed character's details (including Luffy) with sparkle animation and correct/incorrect confirmation buttons.",
+  "frontend/src/components/CharacterSubmissionForm.tsx": "Form for users to submit new characters when the system fails to guess, capturing name, category, description, and linking answer patterns.",
+  "frontend/src/components/Header.tsx": "Application header with MindGuess branding, brain and sparkle icons in mystical purple/pink gradient theme.",
+  "frontend/src/components/Footer.tsx": "Application footer with copyright, attribution to caffeine.ai with UTM tracking, and heart icon.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for all backend operations including startGame, getNextQuestion, answerQuestion, guessCharacter, and addCharacter with proper cache invalidation.",
+  "frontend/src/index.css": "Global styles with mystical OKLCH color system featuring deep purples, pinks, and blues with custom glow utilities and font families.",
+  "frontend/tailwind.config.js": "Tailwind configuration with extended mystical color palette, custom border radius values, glow shadows, display fonts, and custom animations."
+}

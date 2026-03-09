@@ -1,0 +1,97 @@
+{
+  "kind": "build_request",
+  "title": "Fix question relevance and replace Arcanus with Luffy",
+  "projectName": "MindGuess",
+  "priority": "high",
+  "requirements": [
+    {
+      "id": "REQ-12",
+      "text": "Update the backend character database to remove Arcanus and add Luffy from One Piece with appropriate attributes including name 'Monkey D. Luffy', category 'Anime Character', and description capturing his key characteristics as the protagonist of One Piece",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "REMOVE THAT ARCANUS THING AND USE LUFFY FROM ONE PIECE"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Arcanus character is removed from the character database",
+        "Luffy character is added with name 'Monkey D. Luffy'",
+        "Luffy's category is set to 'Anime Character' or similar appropriate category",
+        "Luffy's description includes key traits like straw hat pirate captain, stretchy rubber powers, and dream to become Pirate King"
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "text": "Review and update the question bank to ensure all questions are relevant to guessing anime characters, fictional characters, and other character types, removing any questions that don't help distinguish between characters",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "QUESTIONS AND OPTIONS ARE NOT RELEVENT"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Questions are directly related to character attributes that help narrow down possibilities",
+        "Each question has clear discriminatory power to filter candidates",
+        "Questions cover diverse attributes like physical traits, powers, personality, occupation, origin story, and relationships"
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "text": "Update answer patterns for all characters in the database to ensure they correctly map to the revised question set, with accurate Yes/No/Probably/Probably Not/Don't Know responses",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "QUESTIONS AND OPTIONS ARE NOT RELEVENT"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All characters have complete answer patterns matching the question bank",
+        "Answer patterns accurately reflect each character's attributes",
+        "The decision tree logic can successfully narrow down to Luffy when appropriate answers are given"
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "text": "Update the character avatar display on the frontend to show Luffy instead of Arcanus during gameplay and on the guess reveal screen",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "REMOVE THAT ARCANUS THING AND USE LUFFY FROM ONE PIECE"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Character avatar shows Luffy when he is the guessed character",
+        "No references to Arcanus appear in the UI",
+        "Character name displays as 'Monkey D. Luffy' or 'Luffy' in the guess reveal"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not change the single-actor backend architecture",
+    "Maintain the existing game flow and question-answer mechanism",
+    "Keep the mystical UI design aesthetic intact"
+  ],
+  "nonGoals": [
+    "Adding new game modes",
+    "Changing the five-option answer system",
+    "Redesigning the overall UI layout"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Anime-style illustration of Monkey D. Luffy from One Piece showing his signature straw hat, red vest, and cheerful expression (luffy-avatar.dim_400x400.png)"
+    ],
+    "edits": []
+  }
+}

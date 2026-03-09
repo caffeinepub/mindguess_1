@@ -1,0 +1,74 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-23T09:33:07.961Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 4,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-12",
+        "summary": "Update the backend character database to remove Arcanus and add Luffy from One Piece with appropriate attributes including name 'Monkey D. Luffy', category 'Anime Character', and description capturing his key characteristics as the protagonist of One Piece",
+        "status": "unknown",
+        "plannedFiles": [],
+        "matchedFiles": []
+      },
+      {
+        "id": "REQ-13",
+        "summary": "Review and update the question bank to ensure all questions are relevant to guessing anime characters, fictional characters, and other character types, removing any questions that don't help distinguish between characters",
+        "status": "unknown",
+        "plannedFiles": [],
+        "matchedFiles": []
+      },
+      {
+        "id": "REQ-14",
+        "summary": "Update answer patterns for all characters in the database to ensure they correctly map to the revised question set, with accurate Yes/No/Probably/Probably Not/Don't Know responses",
+        "status": "unknown",
+        "plannedFiles": [],
+        "matchedFiles": []
+      },
+      {
+        "id": "REQ-15",
+        "summary": "Update the character avatar display on the frontend to show Luffy instead of Arcanus during gameplay and on the guess reveal screen",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/public/assets/generated/luffy-avatar.dim_400x400.png",
+          "frontend/src/components/CharacterAvatar.tsx",
+          "frontend/src/components/GuessReveal.tsx",
+          "frontend/src/components/GameInterface.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/public/assets/generated/luffy-avatar.dim_400x400.png",
+          "frontend/src/components/CharacterAvatar.tsx",
+          "frontend/src/components/GuessReveal.tsx",
+          "frontend/src/components/GameInterface.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/main.mo",
+    "backend/migration.mo",
+    "build-request.json",
+    "build-template/README.md",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/public/assets/generated/luffy-avatar.dim_400x400.png",
+    "frontend/src/backend.d.ts",
+    "frontend/src/backend.ts",
+    "frontend/src/components/CharacterAvatar.tsx",
+    "frontend/src/components/GameInterface.tsx",
+    "frontend/src/components/GuessReveal.tsx",
+    "frontend/src/declarations/backend.did.d.ts",
+    "frontend/src/declarations/backend.did.js",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-character-avatar-display-on-the-frontend-to-show-luffy-instead-of-arcanus-during-gameplay-and-on-the-guess-reveal-screen",
+      "featureTitle": "Update the character avatar display on the frontend to show Luffy instead of Arcanus during gameplay and on the guess reveal screen",
+      "files": [
+        "frontend/src/components/CharacterAvatar.tsx",
+        "frontend/src/components/GameInterface.tsx",
+        "frontend/src/components/GuessReveal.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-15"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
